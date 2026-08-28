@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ và đặt hàng - Đặc Sản Tây Nguyên</title>
+  <meta name="description" content="Liên hệ, yêu cầu tư vấn và gửi đơn đặt hàng đặc sản Tây Nguyên.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-content"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TN</span><span><strong>Đặc Sản Tây Nguyên</strong><small>Tinh hoa núi rừng trong từng sản phẩm</small></span></a><a class="cart-link" href="#order-form">Giỏ hàng <span id="cart-count" class="cart-count">0</span></a></div></header>
+<nav class="main-nav" aria-label="Điều hướng chính"><div class="container"><ul><li><a href="index.html">Trang chủ</a></li><li><a href="products.html">Sản phẩm</a></li><li><a href="product-detail.html?id=1">Chi tiết sản phẩm</a></li><li><a href="contact.html" aria-current="page">Liên hệ / Đặt hàng</a></li></ul></div></nav>
+<main>
+  <section class="section contact-heading"><div class="container"><p class="eyebrow">Hỗ trợ khách hàng</p><h1>Liên hệ và đặt hàng</h1><p>Gửi thông tin để được tư vấn hoặc đặt các sản phẩm đã thêm vào giỏ hàng.</p></div></section>
+  <section class="section"><div class="container contact-layout">
+    <div class="contact-form">
+      <h2>Thông tin liên hệ</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-group"><label for="contact-name">Họ và tên *</label><input id="contact-name" name="contact-name" type="text" required></div>
+        <div class="form-group"><label for="contact-email">Email *</label><input id="contact-email" name="contact-email" type="email" required></div>
+        <div class="form-group"><label for="contact-phone">Số điện thoại *</label><input id="contact-phone" name="contact-phone" type="tel" required></div>
+        <div class="form-group"><label for="contact-product">Sản phẩm quan tâm</label><select id="contact-product" name="contact-product"><option value="">-- Chọn sản phẩm --</option><option>Cà phê Buôn Ma Thuột</option><option>Hạt mắc ca Tây Nguyên</option><option>Hạt tiêu Đắk Nông</option><option>Mật ong hoa cà phê</option><option>Bơ sáp Đắk Lắk</option><option>Sầu riêng Đắk Lắk</option><option>Muối kiến vàng Gia Lai</option><option>Rượu cần Tây Nguyên</option></select></div>
+        <div class="form-group"><label for="contact-message">Nội dung liên hệ *</label><textarea id="contact-message" name="contact-message" rows="5" required></textarea></div>
+        <button class="btn" type="submit">Gửi liên hệ</button><p id="contact-message-result" class="form-message" aria-live="polite"></p>
+      </form>
+    </div>
+    <aside class="contact-info"><h2>Thông tin cửa hàng</h2><p><strong>Địa chỉ:</strong><br>Buôn Ma Thuột, Đắk Lắk</p><p><strong>Email:</strong><br><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p><p><strong>Điện thoại:</strong><br><a href="tel:0123456789">0123 456 789</a></p><p><strong>Thời gian:</strong><br>08:00 - 17:00, Thứ 2 - Chủ nhật</p></aside>
+  </div></section>
+
+  <section class="section order-section" aria-labelledby="order-title"><div class="container order-layout">
+    <div><p class="eyebrow">Bài JavaScript - Chương 3</p><h2 id="order-title">Form đặt hàng</h2><p>Giỏ hàng phải có ít nhất một sản phẩm trước khi gửi đơn.</p><div id="cart-summary" class="cart-summary"></div></div>
+    <form id="order-form" class="order-form" novalidate>
+      <div class="form-group"><label for="customer-name">Họ tên khách hàng *</label><input type="text" id="customer-name" name="customer-name" required><small>Tối thiểu 3 ký tự.</small></div>
+      <div class="form-group"><label for="phone">Số điện thoại *</label><input type="tel" id="phone" name="phone" inputmode="numeric" required><small>Gồm đúng 10 chữ số.</small></div>
+      <div class="form-group"><label for="address">Địa chỉ nhận hàng *</label><input type="text" id="address" name="address" required><small>Tối thiểu 10 ký tự.</small></div>
+      <div class="form-group"><label for="note">Ghi chú đơn hàng</label><textarea id="note" name="note" rows="4"></textarea></div>
+      <button class="btn" type="submit">Gửi đơn hàng</button>
+      <p id="order-message" class="form-message" aria-live="polite"></p>
+    </form>
+  </div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><h2>Đặc Sản Tây Nguyên</h2><p>Tinh hoa núi rừng trong từng sản phẩm.</p></div><div><h3>Liên hệ</h3><p>Buôn Ma Thuột, Đắk Lắk</p><p><a href="tel:0123456789">0123 456 789</a></p><p><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p></div></div><p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên.</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm - Đặc Sản Tây Nguyên</title>
+  <meta name="description" content="Danh sách đặc sản Tây Nguyên gồm cà phê, mắc ca, tiêu, mật ong, bơ sáp, sầu riêng, muối kiến vàng và rượu cần.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-content"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TN</span><span><strong>Đặc Sản Tây Nguyên</strong><small>Tinh hoa núi rừng trong từng sản phẩm</small></span></a><a class="cart-link" href="contact.html#order-form">Giỏ hàng <span id="cart-count" class="cart-count">0</span></a></div></header>
+<nav class="main-nav" aria-label="Điều hướng chính"><div class="container"><ul><li><a href="index.html">Trang chủ</a></li><li><a href="products.html" aria-current="page">Sản phẩm</a></li><li><a href="product-detail.html?id=1">Chi tiết sản phẩm</a></li><li><a href="contact.html">Liên hệ / Đặt hàng</a></li></ul></div></nav>
+<main class="section">
+  <div class="container">
+    <header class="page-heading"><p class="eyebrow">Danh sách sản phẩm</p><h1>Đặc sản Tây Nguyên</h1><p>Tìm kiếm hoặc lọc theo danh mục. Danh sách sản phẩm bên phải được JavaScript tạo bằng DOM.</p></header>
+    <div class="products-layout">
+      <aside class="filters" aria-label="Bộ lọc sản phẩm">
+        <h2>Bộ lọc</h2>
+        <div class="form-group"><label for="search-input">Tìm theo tên</label><input id="search-input" type="search" placeholder="Ví dụ: cà phê"></div>
+        <div class="form-group"><label for="category-filter">Danh mục</label><select id="category-filter"><option value="all">Tất cả</option><option value="nong-san-kho">Nông sản khô &amp; hạt</option><option value="mat-tu-nhien">Sản phẩm từ mật &amp; tự nhiên</option><option value="trai-cay">Trái cây &amp; nông sản tươi</option><option value="gia-vi">Gia vị &amp; thực phẩm chế biến</option></select></div>
+      </aside>
+      <section aria-labelledby="product-list-title"><h2 id="product-list-title" class="visually-hidden">Danh sách sản phẩm</h2><div id="product-list" class="product-grid"></div><p id="no-results" class="empty-message" hidden>Không có sản phẩm phù hợp.</p></section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><h2>Đặc Sản Tây Nguyên</h2><p>Tinh hoa núi rừng trong từng sản phẩm.</p></div><div><h3>Liên hệ</h3><p>Buôn Ma Thuột, Đắk Lắk</p><p><a href="tel:0123456789">0123 456 789</a></p><p><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p></div></div><p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên.</p></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
