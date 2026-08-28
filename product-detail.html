@@ -3,16 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chi tiết sản phẩm - Đặc Sản Tây Nguyên</title>
-  <meta name="description" content="Thông tin chi tiết đặc sản Tây Nguyên: xuất xứ, giá, khối lượng, hạn sử dụng và cách bảo quản.">
+  <title>Chi tiết: Cà phê Buôn Ma Thuột - Đặc Sản Tây Nguyên</title>
+  <meta name="description" content="Thông tin chi tiết Cà phê Buôn Ma Thuột: xuất xứ, giá, khối lượng, hạn sử dụng và cách bảo quản.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site-header"><div class="container header-content"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TN</span><span><strong>Đặc Sản Tây Nguyên</strong><small>Tinh hoa núi rừng trong từng sản phẩm</small></span></a><a class="cart-link" href="contact.html#order-form">Giỏ hàng <span id="cart-count" class="cart-count">0</span></a></div></header>
-<nav class="main-nav" aria-label="Điều hướng chính"><div class="container"><ul><li><a href="index.html">Trang chủ</a></li><li><a href="products.html">Sản phẩm</a></li><li><a href="product-detail.html?id=1" aria-current="page">Chi tiết sản phẩm</a></li><li><a href="contact.html">Liên hệ / Đặt hàng</a></li></ul></div></nav>
-<main class="section"><div class="container"><div id="product-detail" class="detail-layout"></div><section class="related-section" aria-labelledby="related-title"><h2 id="related-title">Sản phẩm liên quan</h2><div id="related-products" class="product-grid related-grid"></div></section></div></main>
-<footer class="site-footer"><div class="container footer-grid"><div><h2>Đặc Sản Tây Nguyên</h2><p>Tinh hoa núi rừng trong từng sản phẩm.</p></div><div><h3>Liên hệ</h3><p>Buôn Ma Thuột, Đắk Lắk</p><p><a href="tel:0123456789">0123 456 789</a></p><p><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p></div></div><p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên.</p></footer>
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script src="js/main.js"></script>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">TN</span>
+        <span>
+          <strong>Đặc Sản Tây Nguyên</strong>
+          <small>Tinh hoa núi rừng trong từng sản phẩm</small>
+        </span>
+      </a>
+      <a class="cart-link" href="contact.html#order-form">Giỏ hàng <span class="cart-count">0</span></a>
+    </div>
+  </header>
+
+  <!-- Điều hướng -->
+  <nav class="main-nav" aria-label="Điều hướng chính">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html">Sản phẩm</a></li>
+        <li><a href="product-detail.html" aria-current="page">Chi tiết sản phẩm</a></li>
+        <li><a href="contact.html">Liên hệ / Đặt hàng</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Nội dung chi tiết sản phẩm -->
+  <main class="section">
+    <div class="container">
+      
+      <!-- Bố cục thông tin chi tiết -->
+      <div class="detail-layout">
+        <!-- Cột trái: Hình ảnh sản phẩm -->
+        <div class="detail-image">
+          <img src="images/ca-phe-buon-ma-thuot.jpg" alt="Cà phê Robusta nguyên chất Buôn Ma Thuột">
+        </div>
+
+        <!-- Cột phải: Thông tin sản phẩm -->
+        <div class="detail-info">
+          <span class="badge">Nông sản khô &amp; hạt</span>
+          <h1>Cà phê Buôn Ma Thuột</h1>
+          <p class="price detail-price">180.000đ</p>
+          <p class="detail-description">
+            Cà phê Robusta nguyên chất từ vùng đất Buôn Ma Thuột được tuyển chọn kỹ lưỡng, rang mộc giữ trọn hương vị đậm đà và mùi thơm nồng nàn quyến rũ.
+          </p>
+
+          <!-- Danh sách định nghĩa thông tin sản phẩm bằng thẻ dl -->
+          <dl class="product-specs">
+            <div>
+              <dt>Xuất xứ:</dt>
+              <dd>Buôn Ma Thuột, Đắk Lắk</dd>
+            </div>
+            <div>
+              <dt>Khối lượng:</dt>
+              <dd>500g (Hạt hoặc Bột xay)</dd>
+            </div>
+            <div>
+              <dt>Hạn sử dụng:</dt>
+              <dd>12 tháng kể từ ngày sản xuất</dd>
+            </div>
+            <div>
+              <dt>Bảo quản:</dt>
+              <dd>Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp</dd>
+            </div>
+          </dl>
+
+          <!-- Nhóm nút hành động -->
+          <div class="action-group">
+            <button class="btn" type="button">Thêm vào giỏ hàng</button>
+            <a class="btn btn-secondary" href="contact.html">Liên hệ tư vấn</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Khu vực sản phẩm liên quan -->
+      <section class="related-section" aria-labelledby="related-title">
+        <h2 id="related-title">Sản phẩm liên quan</h2>
+        <div class="product-grid related-grid">
+          
+          <article class="product-card">
+            <img src="images/mac-ca-tay-nguyen.jpg" alt="Hạt mắc ca Tây Nguyên">
+            <div class="product-content">
+              <span class="badge">Nông sản khô</span>
+              <h3>Hạt mắc ca Tây Nguyên</h3>
+              <p class="price">160.000đ</p>
+              <a href="product-detail.html">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="images/mat-ong-hoa-ca-phe.jpg" alt="Mật ong hoa cà phê">
+            <div class="product-content">
+              <span class="badge">Mật tự nhiên</span>
+              <h3>Mật ong hoa cà phê</h3>
+              <p class="price">220.000đ</p>
+              <a href="product-detail.html">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="images/tieu-dak-nong.jpg" alt="Hạt tiêu Đắk Nông">
+            <div class="product-content">
+              <span class="badge">Gia vị</span>
+              <h3>Hạt tiêu Đắk Nông</h3>
+              <p class="price">140.000đ</p>
+              <a href="product-detail.html">Xem chi tiết</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Đặc Sản Tây Nguyên</h2>
+        <p>Tinh hoa núi rừng trong từng sản phẩm.</p>
+      </div>
+      <div>
+        <h3>Liên hệ</h3>
+        <p>Buôn Ma Thuột, Đắk Lắk</p>
+        <p><a href="tel:0123456789">0123 456 789</a></p>
+        <p><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên.</p>
+  </footer>
+
 </body>
 </html>

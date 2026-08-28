@@ -8,23 +8,173 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site-header"><div class="container header-content"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TN</span><span><strong>Đặc Sản Tây Nguyên</strong><small>Tinh hoa núi rừng trong từng sản phẩm</small></span></a><a class="cart-link" href="contact.html#order-form">Giỏ hàng <span id="cart-count" class="cart-count">0</span></a></div></header>
-<nav class="main-nav" aria-label="Điều hướng chính"><div class="container"><ul><li><a href="index.html">Trang chủ</a></li><li><a href="products.html" aria-current="page">Sản phẩm</a></li><li><a href="product-detail.html?id=1">Chi tiết sản phẩm</a></li><li><a href="contact.html">Liên hệ / Đặt hàng</a></li></ul></div></nav>
-<main class="section">
-  <div class="container">
-    <header class="page-heading"><p class="eyebrow">Danh sách sản phẩm</p><h1>Đặc sản Tây Nguyên</h1><p>Tìm kiếm hoặc lọc theo danh mục. Danh sách sản phẩm bên phải được JavaScript tạo bằng DOM.</p></header>
-    <div class="products-layout">
-      <aside class="filters" aria-label="Bộ lọc sản phẩm">
-        <h2>Bộ lọc</h2>
-        <div class="form-group"><label for="search-input">Tìm theo tên</label><input id="search-input" type="search" placeholder="Ví dụ: cà phê"></div>
-        <div class="form-group"><label for="category-filter">Danh mục</label><select id="category-filter"><option value="all">Tất cả</option><option value="nong-san-kho">Nông sản khô &amp; hạt</option><option value="mat-tu-nhien">Sản phẩm từ mật &amp; tự nhiên</option><option value="trai-cay">Trái cây &amp; nông sản tươi</option><option value="gia-vi">Gia vị &amp; thực phẩm chế biến</option></select></div>
-      </aside>
-      <section aria-labelledby="product-list-title"><h2 id="product-list-title" class="visually-hidden">Danh sách sản phẩm</h2><div id="product-list" class="product-grid"></div><p id="no-results" class="empty-message" hidden>Không có sản phẩm phù hợp.</p></section>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">TN</span>
+        <span>
+          <strong>Đặc Sản Tây Nguyên</strong>
+          <small>Tinh hoa núi rừng trong từng sản phẩm</small>
+        </span>
+      </a>
+      <a class="cart-link" href="contact.html#order-form">Giỏ hàng <span class="cart-count">0</span></a>
     </div>
-  </div>
-</main>
-<footer class="site-footer"><div class="container footer-grid"><div><h2>Đặc Sản Tây Nguyên</h2><p>Tinh hoa núi rừng trong từng sản phẩm.</p></div><div><h3>Liên hệ</h3><p>Buôn Ma Thuột, Đắk Lắk</p><p><a href="tel:0123456789">0123 456 789</a></p><p><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p></div></div><p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên.</p></footer>
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script src="js/main.js"></script>
+  </header>
+
+  <!-- Điều hướng -->
+  <nav class="main-nav" aria-label="Điều hướng chính">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html" aria-current="page">Sản phẩm</a></li>
+        <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+        <li><a href="contact.html">Liên hệ / Đặt hàng</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Nội dung danh sách sản phẩm -->
+  <main class="section">
+    <div class="container">
+      <header class="page-heading">
+        <p class="eyebrow">Danh mục chọn lọc</p>
+        <h1>Đặc sản Tây Nguyên</h1>
+        <p>Khám phá trọn vẹn hương vị đại ngàn với các sản phẩm địa phương có nguồn gốc rõ ràng.</p>
+      </header>
+
+      <div class="products-layout">
+        <!-- Bộ lọc tĩnh (aside) -->
+        <aside class="filters" aria-label="Bộ lọc sản phẩm">
+          <h2>Bộ lọc</h2>
+          <div class="form-group">
+            <label for="search-input">Tìm theo tên</label>
+            <input id="search-input" type="search" placeholder="Ví dụ: cà phê">
+          </div>
+          <div class="form-group">
+            <label for="category-filter">Danh mục</label>
+            <select id="category-filter">
+              <option value="all">Tất cả</option>
+              <option value="nong-san-kho">Nông sản khô &amp; hạt</option>
+              <option value="mat-tu-nhien">Sản phẩm từ mật &amp; tự nhiên</option>
+              <option value="trai-cay">Trái cây &amp; nông sản tươi</option>
+              <option value="gia-vi">Gia vị &amp; thực phẩm chế biến</option>
+            </select>
+          </div>
+        </aside>
+
+        <!-- Danh sách 6 sản phẩm bắt buộc (article) -->
+        <section aria-labelledby="product-list-title">
+          <h2 id="product-list-title" class="visually-hidden">Danh sách sản phẩm</h2>
+          <div class="product-grid">
+            
+            <!-- Sản phẩm 1 -->
+            <article class="product-card">
+              <img src="images/ca-phe-buon-ma-thuot.jpg" alt="Cà phê Buôn Ma Thuột">
+              <div class="product-content">
+                <span class="badge">Nông sản khô &amp; hạt</span>
+                <h3>Cà phê Buôn Ma Thuột</h3>
+                <p>Hương thơm mạnh mẽ, vị đậm đà nguyên bản từ vùng đất đỏ bazan.</p>
+                <p class="price">180.000đ</p>
+                <div class="card-actions">
+                  <a class="btn btn-small" href="product-detail.html">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Sản phẩm 2 -->
+            <article class="product-card">
+              <img src="images/mat-ong-hoa-ca-phe.jpg" alt="Mật ong hoa cà phê">
+              <div class="product-content">
+                <span class="badge">Mật &amp; tự nhiên</span>
+                <h3>Mật ong hoa cà phê</h3>
+                <p>Vị ngọt thanh dịu và mùi thơm nhẹ đặc trưng của mùa hoa cà phê nở.</p>
+                <p class="price">220.000đ</p>
+                <div class="card-actions">
+                  <a class="btn btn-small" href="product-detail.html">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Sản phẩm 3 -->
+            <article class="product-card">
+              <img src="images/mac-ca-tay-nguyen.jpg" alt="Hạt mắc ca Tây Nguyên">
+              <div class="product-content">
+                <span class="badge">Nông sản khô &amp; hạt</span>
+                <h3>Hạt mắc ca Tây Nguyên</h3>
+                <p>Hạt giòn bùi, giàu dinh dưỡng, nứt vỏ tự nhiên dễ bóc tách.</p>
+                <p class="price">160.000đ</p>
+                <div class="card-actions">
+                  <a class="btn btn-small" href="product-detail.html">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Sản phẩm 4 -->
+            <article class="product-card">
+              <img src="images/tieu-dak-nong.jpg" alt="Hạt tiêu Đắk Nông">
+              <div class="product-content">
+                <span class="badge">Nông sản khô &amp; hạt</span>
+                <h3>Hạt tiêu Đắk Nông</h3>
+                <p>Hạt mẩy tròn, vị cay nồng và hương thơm đậm vị núi rừng.</p>
+                <p class="price">140.000đ</p>
+                <div class="card-actions">
+                  <a class="btn btn-small" href="product-detail.html">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Sản phẩm 5 -->
+            <article class="product-card">
+              <img src="images/bo-sap-dak-lak.jpg" alt="Bơ sáp Đắk Lắk">
+              <div class="product-content">
+                <span class="badge">Trái cây tươi</span>
+                <h3>Bơ sáp Đắk Lắk</h3>
+                <p>Cơm vàng dẻo quánh, vị béo thơm đặc trưng của trái cây Tây Nguyên.</p>
+                <p class="price">85.000đ</p>
+                <div class="card-actions">
+                  <a class="btn btn-small" href="product-detail.html">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Sản phẩm 6 -->
+            <article class="product-card">
+              <img src="images/muoi-kien-vang.jpg" alt="Muối kiến vàng Gia Lai">
+              <div class="product-content">
+                <span class="badge">Gia vị</span>
+                <h3>Muối kiến vàng Gia Lai</h3>
+                <p>Hòa quyện độc đáo giữa vị mặn, cay nồng và chua dịu đặc trưng.</p>
+                <p class="price">95.000đ</p>
+                <div class="card-actions">
+                  <a class="btn btn-small" href="product-detail.html">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Đặc Sản Tây Nguyên</h2>
+        <p>Tinh hoa núi rừng trong từng sản phẩm.</p>
+      </div>
+      <div>
+        <h3>Liên hệ</h3>
+        <p>Buôn Ma Thuột, Đắk Lắk</p>
+        <p><a href="tel:0123456789">0123 456 789</a></p>
+        <p><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên.</p>
+  </footer>
+
 </body>
 </html>
