@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm đặc sản Tây Nguyên | Đặc Sản Tây Nguyên</title>
+  <meta name="description" content="Danh sách sản phẩm đặc sản Tây Nguyên: cà phê Buôn Ma Thuột, mật ong rừng, mắc ca, tiêu Đắk Nông, bơ sáp Đắk Lắk, thổ cẩm Tây Nguyên - nguồn gốc rõ ràng, chất lượng đảm bảo.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">Đặc Sản <span>Tây Nguyên</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html" aria-current="page">Sản phẩm</a></li>
+        <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="products-page">
+
+    <section class="page-intro">
+      <h1>Sản phẩm đặc sản Tây Nguyên</h1>
+      <p>Tổng hợp các sản phẩm nông sản và thủ công đặc trưng của vùng đất đỏ bazan - từ cà phê, mật ong rừng, mắc ca, tiêu, bơ sáp cho đến thổ cẩm truyền thống. Mỗi sản phẩm đều có nguồn gốc rõ ràng, được chọn lọc kỹ càng từ các nông hộ và làng nghề địa phương.</p>
+    </section>
+
+    <div class="products-layout">
+
+      <aside class="product-filter" aria-label="Bộ lọc sản phẩm">
+        <h2>Danh mục sản phẩm</h2>
+        <form class="filter-form">
+
+          <fieldset>
+            <legend>Nhóm sản phẩm</legend>
+
+            <div class="filter-option">
+              <input type="checkbox" id="cat-hat" name="category" value="nong-san-kho-hat">
+              <label for="cat-hat">Nông sản khô &amp; hạt</label>
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="cat-mat-ong" name="category" value="mat-ong-tu-nhien">
+              <label for="cat-mat-ong">Sản phẩm từ mật &amp; tự nhiên</label>
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="cat-trai-cay" name="category" value="trai-cay-nong-san">
+              <label for="cat-trai-cay">Trái cây &amp; nông sản tươi/sấy</label>
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="cat-gia-vi" name="category" value="gia-vi-che-bien">
+              <label for="cat-gia-vi">Gia vị &amp; thực phẩm chế biến</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Khoảng giá</legend>
+
+            <div class="filter-option">
+              <input type="radio" id="price-all" name="price" value="all" checked>
+              <label for="price-all">Tất cả</label>
+            </div>
+
+            <div class="filter-option">
+              <input type="radio" id="price-under-100" name="price" value="under-100">
+              <label for="price-under-100">Dưới 100.000đ</label>
+            </div>
+
+            <div class="filter-option">
+              <input type="radio" id="price-100-300" name="price" value="100-300">
+              <label for="price-100-300">100.000đ - 300.000đ</label>
+            </div>
+
+            <div class="filter-option">
+              <input type="radio" id="price-over-300" name="price" value="over-300">
+              <label for="price-over-300">Trên 300.000đ</label>
+            </div>
+          </fieldset>
+
+          <button type="button" class="btn btn-secondary">Áp dụng bộ lọc</button>
+        </form>
+      </aside>
+
+      <section class="product-list" aria-label="Danh sách sản phẩm">
+
+        <article class="product-card" data-category="nong-san-kho-hat">
+          <img src="images/ca-phe-buon-ma-thuot.jpg" alt="Cà phê rang xay Buôn Ma Thuột đóng gói">
+          <div class="product-card__body">
+            <p class="product-card__category">Nông sản khô &amp; hạt</p>
+            <h3><a href="product-detail.html">Cà phê Buôn Ma Thuột</a></h3>
+            <p class="product-card__desc">Cà phê Robusta nguyên chất, rang mộc theo phương pháp truyền thống, hương thơm đậm đà đặc trưng của thủ phủ cà phê Việt Nam.</p>
+            <p class="product-card__price">85.000đ / 500g</p>
+            <a class="btn btn-outline" href="product-detail.html">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="nong-san-kho-hat">
+          <img src="images/mac-ca-tay-nguyen.jpg" alt="Hạt mắc ca Tây Nguyên rang nguyên vỏ">
+          <div class="product-card__body">
+            <p class="product-card__category">Nông sản khô &amp; hạt</p>
+            <h3><a href="product-detail.html">Mắc ca Tây Nguyên</a></h3>
+            <p class="product-card__desc">Hạt mắc ca sấy khô, vỏ mỏng dễ tách, nhân béo bùi, thu hoạch từ các nông trại tại Đắk Lắk và Lâm Đồng.</p>
+            <p class="product-card__price">220.000đ / kg</p>
+            <a class="btn btn-outline" href="product-detail.html">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="mat-ong-tu-nhien">
+          <img src="images/mat-ong-rung-tay-nguyen.jpg" alt="Chai mật ong rừng Tây Nguyên nguyên chất">
+          <div class="product-card__body">
+            <p class="product-card__category">Sản phẩm từ mật &amp; tự nhiên</p>
+            <h3><a href="product-detail.html">Mật ong rừng Tây Nguyên</a></h3>
+            <p class="product-card__desc">Mật ong nguyên chất khai thác từ rừng khộp Tây Nguyên, không pha tạp, giữ trọn hương vị hoa rừng tự nhiên.</p>
+            <p class="product-card__price">180.000đ / chai 500ml</p>
+            <a class="btn btn-outline" href="product-detail.html">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="trai-cay-nong-san">
+          <img src="images/bo-sap-dak-lak.jpg" alt="Bơ sáp Đắk Lắk chín tự nhiên">
+          <div class="product-card__body">
+            <p class="product-card__category">Trái cây &amp; nông sản tươi/sấy</p>
+            <h3><a href="product-detail.html">Bơ sáp Đắk Lắk</a></h3>
+            <p class="product-card__desc">Bơ sáp thịt vàng, dẻo mịn, béo ngậy, trồng theo hướng hữu cơ trên vùng đất đỏ bazan Đắk Lắk.</p>
+            <p class="product-card__price">65.000đ / kg</p>
+            <a class="btn btn-outline" href="product-detail.html">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="gia-vi-che-bien">
+          <img src="images/tieu-dak-nong.jpg" alt="Hạt tiêu đen Đắk Nông phơi khô">
+          <div class="product-card__body">
+            <p class="product-card__category">Gia vị &amp; thực phẩm chế biến</p>
+            <h3><a href="product-detail.html">Tiêu Đắk Nông</a></h3>
+            <p class="product-card__desc">Hạt tiêu đen chắc hạt, cay nồng đặc trưng, canh tác tại vùng chuyên canh tiêu nổi tiếng Đắk Nông.</p>
+            <p class="product-card__price">120.000đ / 500g</p>
+            <a class="btn btn-outline" href="product-detail.html">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="thu-cong-my-nghe">
+          <img src="images/tho-cam-tay-nguyen.jpg" alt="Khăn thổ cẩm Tây Nguyên dệt thủ công">
+          <div class="product-card__body">
+            <p class="product-card__category">Thủ công mỹ nghệ &amp; lưu niệm</p>
+            <h3><a href="product-detail.html">Thổ cẩm Tây Nguyên</a></h3>
+            <p class="product-card__desc">Vải thổ cẩm dệt thủ công bởi nghệ nhân người Ê Đê, hoa văn truyền thống, chất liệu bền đẹp.</p>
+            <p class="product-card__price">350.000đ / tấm</p>
+            <a class="btn btn-outline" href="product-detail.html">Xem chi tiết</a>
+          </div>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-info">
+      <p>Đặc Sản Tây Nguyên - Địa chỉ: 123 Đường Nguyễn Tất Thành, Buôn Ma Thuột, Đắk Lắk</p>
+      <p>Điện thoại: 0900 000 000 | Email: [email protected]</p>
+    </div>
+    <div class="footer-links">
+      <a href="contact.html">Liên hệ</a>
+      <a href="products.html">Sản phẩm</a>
+    </div>
+    <p class="footer-copyright">&copy; 2026 Đặc Sản Tây Nguyên. Đã đăng ký bản quyền.</p>
+  </footer>
+
+</body>
+</html>
