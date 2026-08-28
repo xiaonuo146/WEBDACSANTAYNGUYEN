@@ -214,7 +214,13 @@ button:disabled {
   gap: 12px;
   color: #fff;
 }
-
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
 .brand:hover {
   text-decoration: none;
 }
