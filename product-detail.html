@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chi tiết: Cà phê Buôn Ma Thuột - Đặc Sản Tây Nguyên</title>
-  <meta name="description" content="Thông tin chi tiết Cà phê Buôn Ma Thuột: xuất xứ, giá, khối lượng, hạn sử dụng và cách bảo quản.">
+  <meta name="description" content="Thông tin chi tiết Cà phê Buôn Ma Thuột: xuất xứ, giá, khối lượng, hạn sử dụng và cách bảo quản chuẩn Tây Nguyên.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header Chuẩn Cửa Hàng -->
   <header class="site-header">
     <div class="container header-content">
+      <!-- Thương hiệu ở bên trái -->
       <a class="brand" href="index.html">
         <img src="images/logo-tay-nguyen.png" alt="Logo Đặc Sản Tây Nguyên" class="brand-logo">
         <span>
@@ -19,7 +20,15 @@
           <small>Tinh hoa núi rừng trong từng sản phẩm</small>
         </span>
       </a>
-      <a class="cart-link" href="contact.html#order-form">Giỏ hàng <span class="cart-count">0</span></a>
+      
+      <!-- Giỏ hàng thiết kế mới ở bên phải -->
+      <a class="cart-link" href="contact.html">
+        <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+        </svg>
+        <span>Giỏ hàng</span>
+        <span class="cart-count">0</span>
+      </a>
     </div>
   </header>
 
@@ -39,11 +48,10 @@
   <main class="section">
     <div class="container">
       
-      <!-- Bố cục thông tin chi tiết -->
       <div class="detail-layout">
-        <!-- Cột trái: Hình ảnh sản phẩm -->
+        <!-- Cột trái: Hình ảnh sản phẩm có alt -->
         <div class="detail-image">
-          <img src="images/ca-phe-buon-ma-thuot.jpg" alt="Cà phê Robusta nguyên chất Buôn Ma Thuột">
+          <img src="images/ca-phe-buon-ma-thuot.jpg" alt="Cà phê Robusta nguyên chất hạt Buôn Ma Thuột">
         </div>
 
         <!-- Cột phải: Thông tin sản phẩm -->
@@ -52,32 +60,27 @@
           <h1>Cà phê Buôn Ma Thuột</h1>
           <p class="price detail-price">180.000đ</p>
           <p class="detail-description">
-            Cà phê Robusta nguyên chất từ vùng đất Buôn Ma Thuột được tuyển chọn kỹ lưỡng, rang mộc giữ trọn hương vị đậm đà và mùi thơm nồng nàn quyến rũ.
+            Cà phê Robusta nguyên chất từ vùng đất Buôn Ma Thuột được tuyển chọn kỹ lưỡng, quy trình rang mộc nhiệt độ chuẩn giúp lưu giữ hương vị đậm đà nguyên bản và mùi thơm nồng nàn lôi cuốn.
           </p>
 
-          <!-- Danh sách định nghĩa thông tin sản phẩm bằng thẻ dl -->
+          <!-- Danh sách định nghĩa thông tin sản phẩm chuẩn DL (Mục 5) -->
           <dl class="product-specs">
-            <div>
-              <dt>Xuất xứ:</dt>
-              <dd>Buôn Ma Thuột, Đắk Lắk</dd>
-            </div>
-            <div>
-              <dt>Khối lượng:</dt>
-              <dd>500g (Hạt hoặc Bột xay)</dd>
-            </div>
-            <div>
-              <dt>Hạn sử dụng:</dt>
-              <dd>12 tháng kể từ ngày sản xuất</dd>
-            </div>
-            <div>
-              <dt>Bảo quản:</dt>
-              <dd>Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp</dd>
-            </div>
+            <dt>Xuất xứ:</dt>
+            <dd>Buôn Ma Thuột, Đắk Lắk</dd>
+            
+            <dt>Khối lượng:</dt>
+            <dd>500g (Hạt hoặc Bột xay mộc)</dd>
+            
+            <dt>Hạn sử dụng:</dt>
+            <dd>12 tháng kể từ ngày sản xuất đóng bao bì</dd>
+            
+            <dt>Cách bảo quản:</dt>
+            <dd>Nơi thoáng mát, tránh ánh nắng trực tiếp, bảo quản kín hơi</dd>
           </dl>
 
           <!-- Nhóm nút hành động -->
           <div class="action-group">
-            <button class="btn" type="button">Thêm vào giỏ hàng</button>
+            <button class="btn btn-add-to-cart" data-id="1" type="button">Thêm vào giỏ hàng</button>
             <a class="btn btn-secondary" href="contact.html">Liên hệ tư vấn</a>
           </div>
         </div>
@@ -85,13 +88,13 @@
 
       <!-- Khu vực sản phẩm liên quan -->
       <section class="related-section" aria-labelledby="related-title">
-        <h2 id="related-title">Sản phẩm liên quan</h2>
-        <div class="product-grid related-grid">
+        <h2 id="related-title" style="margin-bottom: var(--space-lg);">Sản phẩm liên quan</h2>
+        <div class="product-grid">
           
           <article class="product-card">
-            <img src="images/mac-ca.jpg" alt="Hạt mắc ca Tây Nguyên">
+            <img src="images/mac-ca-tay-nguyen.jpg" alt="Hạt mắc ca Tây Nguyên">
             <div class="product-content">
-              <span class="badge">Nông sản khô</span>
+              <span class="badge">Nông sản khô &amp; hạt</span>
               <h3>Hạt mắc ca Tây Nguyên</h3>
               <p class="price">160.000đ</p>
               <a href="product-detail.html">Xem chi tiết</a>
@@ -99,10 +102,10 @@
           </article>
 
           <article class="product-card">
-            <img src="images/mat-ong-hoa-ca-phe.jpg" alt="Mật ong hoa cà phê">
+            <img src="images/mat-ong-rung-tay-nguyen.jpg" alt="Mật ong rừng tự nhiên">
             <div class="product-content">
-              <span class="badge">Mật tự nhiên</span>
-              <h3>Mật ong hoa cà phê</h3>
+              <span class="badge">Mật &amp; tự nhiên</span>
+              <h3>Mật ong rừng Tây Nguyên</h3>
               <p class="price">220.000đ</p>
               <a href="product-detail.html">Xem chi tiết</a>
             </div>
@@ -111,7 +114,7 @@
           <article class="product-card">
             <img src="images/tieu-dak-nong.jpg" alt="Hạt tiêu Đắk Nông">
             <div class="product-content">
-              <span class="badge">Gia vị</span>
+              <span class="badge">Nông sản khô &amp; hạt</span>
               <h3>Hạt tiêu Đắk Nông</h3>
               <p class="price">140.000đ</p>
               <a href="product-detail.html">Xem chi tiết</a>
@@ -138,8 +141,9 @@
         <p><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p>
       </div>
     </div>
-    <p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên.</p>
+    <p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên. Bảo lưu mọi quyền.</p>
   </footer>
 
+  <script src="js/main.js" defer></script>
 </body>
 </html>
