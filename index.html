@@ -3,197 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đặc Sản Tây Nguyên - Trang chủ</title>
-  <meta name="description" content="Khám phá đặc sản Tây Nguyên: cà phê Buôn Ma Thuột, mắc ca, tiêu Đắk Nông, mật ong hoa cà phê, bơ sáp, sầu riêng, muối kiến vàng và rượu cần.">
-  
-  <!-- Tập tin định kiểu CSS -->
+  <title>Trang chủ - Đặc Sản Tây Nguyên</title>
+  <meta name="description" content="Trang chủ giới thiệu hệ thống đặc sản Tây Nguyên chính gốc: Cà phê Buôn Ma Thuột, Mật ong rừng tự nhiên và Mắc ca cao cấp.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ========================================================================
-       1. ĐẦU TRANG (HEADER)
-       ======================================================================== -->
+  <!-- Header Chuẩn Cửa Hàng -->
   <header class="site-header">
     <div class="container header-content">
-      <!-- Logo & Tên thương hiệu -->
-      <a class="brand" href="index.html" aria-label="Đặc Sản Tây Nguyên - Trang chủ">
+      <!-- Thương hiệu ở bên trái -->
+      <a class="brand" href="index.html">
         <img src="images/logo-tay-nguyen.png" alt="Logo Đặc Sản Tây Nguyên" class="brand-logo">
         <span>
           <strong>Đặc Sản Tây Nguyên</strong>
           <small>Tinh hoa núi rừng trong từng sản phẩm</small>
         </span>
       </a>
-
-      <!-- Giỏ hàng nhanh -->
-      <a class="cart-link" href="contact.html#order-form">
-        Giỏ hàng <span id="cart-count" class="cart-count">0</span>
+      
+      <!-- Giỏ hàng thiết kế mới ở bên phải -->
+      <a class="cart-link" href="contact.html">
+        <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+        </svg>
+        <span>Giỏ hàng</span>
+        <span class="cart-count">0</span>
       </a>
     </div>
   </header>
 
-  <!-- ========================================================================
-       2. THANH ĐIỀU HƯỚNG CHÍNH (NAVIGATION)
-       ======================================================================== -->
+  <!-- Điều hướng -->
   <nav class="main-nav" aria-label="Điều hướng chính">
     <div class="container">
       <ul>
         <li><a href="index.html" aria-current="page">Trang chủ</a></li>
         <li><a href="products.html">Sản phẩm</a></li>
-        <li><a href="product-detail.html?id=1">Chi tiết sản phẩm</a></li>
+        <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
         <li><a href="contact.html">Liên hệ / Đặt hàng</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ========================================================================
-       3. NỘI DUNG CHÍNH (MAIN CONTENT)
-       ======================================================================== -->
+  <!-- Nội dung chính -->
   <main>
-    <!-- Khối Banner chính (Hero Section) -->
-    <section class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Đặc sản chọn lọc từ Tây Nguyên</p>
+    <!-- Khu vực 1: Hero Banner giới thiệu -->
+    <section class="hero-section" aria-label="Giới thiệu chung">
+      <div class="container">
         <h1>Khám phá đặc sản Tây Nguyên</h1>
-        <p>Từ nông sản khô, mật ong, trái cây đến gia vị và thức uống truyền thống, mỗi sản phẩm đều mang nét riêng của vùng đất đại ngàn.</p>
-        <a class="btn" href="products.html">Khám phá sản phẩm</a>
+        <p>Mang hương vị đại ngàn Bazan nguyên bản vào từng bữa ăn gia đình Việt. Sản phẩm chất lượng cao, chọn lọc tỉ mỉ từ các nông hộ bản địa vùng cao.</p>
+        <a href="products.html" class="btn">Xem sản phẩm ngay</a>
       </div>
     </section>
 
-    <!-- Khối Danh mục sản phẩm (Categories) -->
-    <section class="section categories" aria-labelledby="category-title">
-      <div class="container">
-        <h2 id="category-title">Danh mục sản phẩm</h2>
-        <p class="section-description">Chọn một danh mục để xem các sản phẩm tương ứng.</p>
-        
-        <div class="category-grid">
-          <!-- Danh mục 1: Nông sản khô -->
-          <a class="category-card" href="products.html?category=nong-san-kho">
-            <img src="images/ca-phe-buon-ma-thuot.jpg" alt="Nông sản khô và hạt Tây Nguyên">
-            <div class="category-content">
-              <h3>Nông sản khô &amp; hạt</h3>
-              <p>Cà phê Buôn Ma Thuột, mắc ca Tây Nguyên và hạt tiêu Đắk Nông.</p>
-            </div>
-          </a>
-
-          <!-- Danh mục 2: Mật ong tự nhiên -->
-          <a class="category-card" href="products.html?category=mat-tu-nhien">
-            <img src="images/mat-ong-hoa-ca-phe.jpg" alt="Mật ong hoa cà phê Tây Nguyên">
-            <div class="category-content">
-              <h3>Sản phẩm từ mật &amp; tự nhiên</h3>
-              <p>Mật ong hoa cà phê với hương thơm dịu, vị ngọt tự nhiên.</p>
-            </div>
-          </a>
-
-          <!-- Danh mục 3: Trái cây tươi -->
-          <a class="category-card" href="products.html?category=trai-cay">
-            <img src="images/bo-sap-dak-lak.jpg" alt="Trái cây và nông sản tươi Tây Nguyên">
-            <div class="category-content">
-              <h3>Trái cây &amp; nông sản tươi</h3>
-              <p>Bơ sáp Đắk Lắk và sầu riêng Đắk Lắk.</p>
-            </div>
-          </a>
-
-          <!-- Danh mục 4: Gia vị chế biến -->
-          <a class="category-card" href="products.html?category=gia-vi">
-            <img src="images/muoi-kien-vang.jpg" alt="Gia vị và thực phẩm chế biến Tây Nguyên">
-            <div class="category-content">
-              <h3>Gia vị &amp; thực phẩm chế biến</h3>
-              <p>Muối kiến vàng Gia Lai và rượu cần Tây Nguyên.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Khối Sản phẩm nổi bật (Featured Products) -->
-    <section class="section featured-products" aria-labelledby="featured-title">
-      <div class="container">
-        <h2 id="featured-title">Sản phẩm nổi bật</h2>
-        <p class="section-description">Ba sản phẩm tiêu biểu được nhiều người biết đến.</p>
-        
-        <div class="product-grid featured-grid">
-          <!-- Sản phẩm nổi bật 1 -->
+    <div class="container section">
+      
+      <!-- Khu vực 2: Sản phẩm nổi bật -->
+      <section class="section" aria-labelledby="featured-title">
+        <h2 id="featured-title" style="text-align: center; margin-bottom: var(--space-lg);">Sản phẩm nổi bật</h2>
+        <div class="product-grid">
+          
           <article class="product-card">
-            <img src="images/ca-phe-buon-ma-thuot.jpg" alt="Cà phê Buôn Ma Thuột">
+            <img src="images/ca-phe-buon-ma-thuot.jpg" alt="Cà phê Buôn Ma Thuột rang mộc nguyên chất">
             <div class="product-content">
               <span class="badge">Nông sản khô &amp; hạt</span>
               <h3>Cà phê Buôn Ma Thuột</h3>
-              <p>Hương thơm mạnh, vị đậm đặc trưng của vùng đất Đắk Lắk.</p>
-              <a href="product-detail.html?id=1">Xem chi tiết Cà phê Buôn Ma Thuột</a>
+              <p>Hạt Robusta thượng hạng tuyển chọn chín đỏ, giữ trọn hương thơm mạnh mẽ vùng đất đỏ.</p>
+              <p class="price">180.000đ</p>
+              <div class="card-actions">
+                <a class="btn btn-small" href="product-detail.html">Xem chi tiết</a>
+              </div>
             </div>
           </article>
 
-          <!-- Sản phẩm nổi bật 2 -->
           <article class="product-card">
-            <img src="images/mat-ong-hoa-ca-phe.jpg" alt="Mật ong hoa cà phê">
+            <img src="images/mat-ong-rung-tay-nguyen.jpg" alt="Mật ong rừng tự nhiên nguyên chất">
             <div class="product-content">
               <span class="badge">Mật &amp; tự nhiên</span>
-              <h3>Mật ong hoa cà phê</h3>
-              <p>Vị ngọt dịu và mùi thơm nhẹ từ mùa hoa cà phê Tây Nguyên.</p>
-              <a href="product-detail.html?id=4">Xem chi tiết Mật ong hoa cà phê</a>
+              <h3>Mật ong rừng Tây Nguyên</h3>
+              <p>Hương thơm thanh tao ngọt lịm từ mật hoa dại tự nhiên giữa lòng rừng già đại ngàn.</p>
+              <p class="price">220.000đ</p>
+              <div class="card-actions">
+                <a class="btn btn-small" href="product-detail.html">Xem chi tiết</a>
+              </div>
             </div>
           </article>
 
-          <!-- Sản phẩm nổi bật 3 -->
           <article class="product-card">
-            <img src="images/muoi-kien-vang.jpg" alt="Muối kiến vàng Gia Lai">
+            <img src="images/mac-ca-tay-nguyen.jpg" alt="Mắc ca Tây Nguyên sấy giòn">
             <div class="product-content">
-              <span class="badge">Gia vị</span>
-              <h3>Muối kiến vàng Gia Lai</h3>
-              <p>Gia vị đặc trưng của Gia Lai, có vị mặn, chua và cay hài hòa.</p>
-              <a href="product-detail.html?id=7">Xem chi tiết Muối kiến vàng Gia Lai</a>
+              <span class="badge">Nông sản khô &amp; hạt</span>
+              <h3>Mắc ca Tây Nguyên</h3>
+              <p>Hạt béo bùi dồi dào dưỡng chất, được đóng gói giữ độ giòn tự nhiên.</p>
+              <p class="price">160.000đ</p>
+              <div class="card-actions">
+                <a class="btn btn-small" href="product-detail.html">Xem chi tiết</a>
+              </div>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
 
-    <!-- Khối Câu chuyện vùng miền (Brand Story) -->
-    <section class="section story" aria-labelledby="story-title">
-      <div class="container story-layout">
-        <img src="images/cau-chuyen-tay-nguyen.jpg" alt="Không gian núi rừng và nông sản Tây Nguyên">
-        <div>
-          <p class="eyebrow">Câu chuyện vùng miền</p>
-          <h2 id="story-title">Hương vị từ vùng đất đại ngàn</h2>
-          <p>Tây Nguyên có khí hậu và thổ nhưỡng phù hợp với nhiều loại nông sản. Từ những vườn cà phê, hồ tiêu đến trái cây và các món truyền thống, mỗi sản phẩm đều gắn với đời sống của người dân địa phương.</p>
-          <p>Website giới thiệu các sản phẩm địa phương theo hướng rõ nguồn gốc, dễ tìm hiểu và thuận tiện khi lựa chọn.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Khối Cam kết chất lượng (Commitments) -->
-    <section class="section commitment" aria-labelledby="commitment-title">
-      <div class="container">
-        <h2 id="commitment-title">Cam kết chất lượng</h2>
-        <div class="commitment-list">
-          <article>
-            <h3>Nguồn gốc rõ ràng</h3>
-            <p>Thông tin xuất xứ được trình bày cụ thể cho từng sản phẩm.</p>
-          </article>
-          <article>
-            <h3>Sản phẩm địa phương</h3>
-            <p>Ưu tiên đặc sản mang nét riêng của các tỉnh Tây Nguyên.</p>
-          </article>
-          <article>
-            <h3>Thông tin minh bạch</h3>
-            <p>Giá, tình trạng hàng và mô tả được hiển thị rõ ràng.</p>
-          </article>
+      <!-- Khu vực 3: Câu chuyện vùng miền -->
+      <section class="story-box" aria-labelledby="story-title">
+        <h2 id="story-title">Câu chuyện vùng miền</h2>
+        <p>Đại ngàn Tây Nguyên xanh thẳm không chỉ say đắm lòng người bởi tiếng cồng chiêng ngân vang vọng suốt ngàn năm, mà còn bởi chiều sâu văn hóa ẩm thực đúc kết trong từng thức quà nông sản. Đất đỏ bazan trù phú hình thành qua hàng triệu năm kiến tạo địa chất, kết hợp với gió sương khô cằn và nắng vàng rực rỡ, đã tạo nên một thung lũng sinh thái lý tưởng nuôi dưỡng những sản vật tinh túy nhất.</p>
+        <p>Mỗi ngụm cà phê sáng đắng dịu, mỗi thìa mật ngọt mát dâng tặng cuộc sống đều chứa đựng những nét mộc mạc, thật thà và nghĩa tình chân chất của đồng bào các dân tộc Ê-đê, Gia-rai, Ba-na. Chúng tôi trân trọng nâng niu và mang trọn vẹn **tinh hoa núi rừng trong từng sản phẩm** đến tổ ấm của gia đình bạn.</p>
+      </section>
+
+      <!-- Khu vực 4: Cam kết chất lượng -->
+      <section class="commitment-box" aria-labelledby="commit-title">
+        <h2 id="commit-title" style="text-align: center;">Cam kết chất lượng</h2>
+        <div class="commitment-grid">
+          <div class="commitment-card">
+            <h3 style="font-size:1.1rem; color:var(--color-secondary);">Sản phẩm địa phương</h3>
+            <p style="font-size:0.9rem; color:var(--color-muted);">Thu hoạch hoàn toàn trực tiếp tại các vùng đệm nông trang Tây Nguyên xanh sạch.</p>
+          </div>
+          <div class="commitment-card">
+            <h3 style="font-size:1.1rem; color:var(--color-secondary);">Nguồn gốc rõ ràng</h3>
+            <p style="font-size:0.9rem; color:var(--color-muted);">Thông tin truy xuất từng lô hàng minh bạch, tuyệt đối không pha tạp hóa chất bảo quản.</p>
+          </div>
+          <div class="commitment-card">
+            <h3 style="font-size:1.1rem; color:var(--color-secondary);">Dịch vụ chu đáo</h3>
+            <p style="font-size:0.9rem; color:var(--color-muted);">Tư vấn nhiệt tình, sẵn sàng hỗ trợ đóng gói làm quà biếu trang trọng gửi người thân.</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+    </div>
   </main>
 
-  <!-- ========================================================================
-       4. CHÂN TRANG (FOOTER)
-       ======================================================================== -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <h2>Đặc Sản Tây Nguyên</h2>
         <p>Tinh hoa núi rừng trong từng sản phẩm.</p>
       </div>
-
       <div>
         <h3>Liên hệ</h3>
         <p>Buôn Ma Thuột, Đắk Lắk</p>
@@ -201,12 +147,9 @@
         <p><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p>
       </div>
     </div>
-    <p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên.</p>
+    <p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên. Bảo lưu mọi quyền.</p>
   </footer>
 
-  <!-- ========================================================================
-       5. SCRIPTS
-       ======================================================================== -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

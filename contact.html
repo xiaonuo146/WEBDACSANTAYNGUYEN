@@ -3,21 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liên hệ và đặt hàng - Đặc Sản Tây Nguyên</title>
-  <meta name="description" content="Liên hệ, yêu cầu tư vấn và gửi đơn đặt hàng đặc sản Tây Nguyên.">
-  
-  <!-- Tập tin CSS chính -->
+  <title>Liên hệ &amp; Đặt hàng - Đặc Sản Tây Nguyên</title>
+  <meta name="description" content="Trang liên hệ đặt mua đặc sản Tây Nguyên và đăng ký tư vấn trực tiếp từ đơn vị cung ứng.">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- ========================================================================
-       1. ĐẦU TRANG (HEADER)
-       ======================================================================== -->
+ <!-- Header Chuẩn Cửa Hàng -->
   <header class="site-header">
     <div class="container header-content">
-      <!-- Logo & Tên thương hiệu -->
+      <!-- Thương hiệu ở bên trái -->
       <a class="brand" href="index.html">
         <img src="images/logo-tay-nguyen.png" alt="Logo Đặc Sản Tây Nguyên" class="brand-logo">
         <span>
@@ -25,167 +20,111 @@
           <small>Tinh hoa núi rừng trong từng sản phẩm</small>
         </span>
       </a>
-
-      <!-- Giỏ hàng nhanh -->
-      <a class="cart-link" href="#order-form">
-        Giỏ hàng <span id="cart-count" class="cart-count">0</span>
+      
+      <!-- Giỏ hàng thiết kế mới ở bên phải -->
+      <a class="cart-link" href="contact.html">
+        <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+        </svg>
+        <span>Giỏ hàng</span>
+        <span class="cart-count">0</span>
       </a>
     </div>
   </header>
 
-  <!-- ========================================================================
-       2. THANH ĐIỀU HƯỚNG CHÍNH (NAVIGATION)
-       ======================================================================== -->
+  <!-- Điều hướng -->
   <nav class="main-nav" aria-label="Điều hướng chính">
     <div class="container">
       <ul>
         <li><a href="index.html">Trang chủ</a></li>
         <li><a href="products.html">Sản phẩm</a></li>
-        <li><a href="product-detail.html?id=1">Chi tiết sản phẩm</a></li>
+        <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
         <li><a href="contact.html" aria-current="page">Liên hệ / Đặt hàng</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ========================================================================
-       3. NỘI DUNG CHÍNH (MAIN CONTENT)
-       ======================================================================== -->
-  <main>
-    <!-- Tiêu đề đầu trang -->
-    <section class="section contact-heading">
-      <div class="container">
-        <p class="eyebrow">Hỗ trợ khách hàng</p>
-        <h1>Liên hệ và đặt hàng</h1>
-        <p>Gửi thông tin để được tư vấn hoặc đặt các sản phẩm đã thêm vào giỏ hàng.</p>
-      </div>
-    </section>
+  <!-- Nội dung trang liên hệ -->
+  <main class="section">
+    <div class="container">
+      <header class="page-heading">
+        <p class="eyebrow">Kết nối với chúng tôi</p>
+        <h1>Liên hệ đặt hàng &amp; Tư vấn</h1>
+        <p>Vui lòng điền thông tin vào biểu mẫu dưới đây, chúng tôi sẽ sớm liên hệ xác nhận đơn hàng.</p>
+      </header>
 
-    <!-- Khu vực: Biểu mẫu liên hệ & Thông tin cửa hàng -->
-    <section class="section">
-      <div class="container contact-layout">
+      <!-- Layout chia 2 cột: Cột 1 thông tin bổ sung, Cột 2 là Form nhập liệu -->
+      <div class="products-layout">
         
-        <!-- Cột trái: Form gửi liên hệ / tư vấn -->
-        <div class="contact-form">
-          <h2>Thông tin liên hệ</h2>
-          <form id="contact-form" novalidate>
+        <!-- Thông tin liên hệ bổ sung -->
+        <aside class="filters" aria-label="Thông tin liên hệ trực tiếp">
+          <h2>Địa chỉ cửa hàng</h2>
+          <p style="margin-bottom: var(--space-md); color: var(--color-muted); font-size: 0.95rem;">
+            Bạn cũng có thể qua cửa hàng mua trực tiếp tại trung tâm thành phố Buôn Ma Thuột.
+          </p>
+          <address style="font-style: normal; display: grid; gap: var(--space-sm); font-size: 0.95rem;">
+            <p><strong>Địa chỉ:</strong> 124 Lê Duẩn, TP. Buôn Ma Thuột, Đắk Lắk</p>
+            <p><strong>Điện thoại:</strong> <a href="tel:0123456789">0123 456 789</a></p>
+            <p><strong>Email:</strong> <a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p>
+          </address>
+        </aside>
+
+        <!-- Form nhập liệu chính (Mục 6) -->
+        <section aria-labelledby="form-title">
+          <h2 id="form-title" class="visually-hidden">Biểu mẫu thông tin đặt hàng</h2>
+          <form id="contact-form" style="background-color: var(--color-surface); padding: var(--space-lg); border: 1px solid var(--color-border); border-radius: var(--radius-lg);" novalidate>
+            
             <div class="form-group">
-              <label for="contact-name">Họ và tên *</label>
-              <input id="contact-name" name="contact-name" type="text" required>
+              <label for="fullname">Họ và tên <span style="color:red;">*</span></label>
+              <input type="text" id="fullname" class="form-control" placeholder="Nguyễn Văn A" required>
+              <span class="error-msg" id="error-fullname" style="color:red; font-size: 0.8rem; display:block; margin-top: 4px;"></span>
             </div>
 
             <div class="form-group">
-              <label for="contact-email">Email *</label>
-              <input id="contact-email" name="contact-email" type="email" required>
+              <label for="email">Địa chỉ Email <span style="color:red;">*</span></label>
+              <input type="email" id="email" class="form-control" placeholder="name@domain.com" required>
+              <span class="error-msg" id="error-email" style="color:red; font-size: 0.8rem; display:block; margin-top: 4px;"></span>
             </div>
 
             <div class="form-group">
-              <label for="contact-phone">Số điện thoại *</label>
-              <input id="contact-phone" name="contact-phone" type="tel" required>
+              <label for="phone">Số điện thoại <span style="color:red;">*</span></label>
+              <input type="tel" id="phone" class="form-control" placeholder="0912345678" required>
+              <span class="error-msg" id="error-phone" style="color:red; font-size: 0.8rem; display:block; margin-top: 4px;"></span>
             </div>
 
             <div class="form-group">
-              <label for="contact-product">Sản phẩm quan tâm</label>
-              <select id="contact-product" name="contact-product">
-                <option value="">-- Chọn sản phẩm --</option>
-                <option>Cà phê Buôn Ma Thuột</option>
-                <option>Hạt mắc ca Tây Nguyên</option>
-                <option>Hạt tiêu Đắk Nông</option>
-                <option>Mật ong hoa cà phê</option>
-                <option>Bơ sáp Đắk Lắk</option>
-                <option>Sầu riêng Đắk Lắk</option>
-                <option>Muối kiến vàng Gia Lai</option>
-                <option>Rượu cần Tây Nguyên</option>
+              <label for="product-interest">Sản phẩm quan tâm</label>
+              <select id="product-interest" class="form-control">
+                <option value="">-- Chọn sản phẩm ưu tiên --</option>
+                <option value="cafe">Cà phê Buôn Ma Thuột</option>
+                <option value="honey">Mật ong rừng Tây Nguyên</option>
+                <option value="macca">Mắc ca Tây Nguyên</option>
+                <option value="pepper">Hạt tiêu Đắk Nông</option>
+                <option value="avocado">Bơ sáp Đắk Lắk</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="contact-message">Nội dung liên hệ *</label>
-              <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+              <label for="address">Địa chỉ giao hàng / Nội dung liên hệ <span style="color:red;">*</span></label>
+              <textarea id="address" class="form-control" style="min-height: 120px;" placeholder="Vui lòng ghi rõ địa chỉ chi tiết để giao hàng..." required></textarea>
+              <span class="error-msg" id="error-address" style="color:red; font-size: 0.8rem; display:block; margin-top: 4px;"></span>
             </div>
 
-            <button class="btn" type="submit">Gửi liên hệ</button>
-            <p id="contact-message-result" class="form-message" aria-live="polite"></p>
+            <button type="submit" class="btn" style="width: 100%;">Gửi thông tin liên hệ</button>
           </form>
-        </div>
-
-        <!-- Cột phải: Thông tin liên hệ trực tiếp của cửa hàng -->
-        <aside class="contact-info">
-          <h2>Thông tin cửa hàng</h2>
-          <p>
-            <strong>Địa chỉ:</strong><br>
-            Buôn Ma Thuột, Đắk Lắk
-          </p>
-          <p>
-            <strong>Email:</strong><br>
-            <a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a>
-          </p>
-          <p>
-            <strong>Điện thoại:</strong><br>
-            <a href="tel:0123456789">0123 456 789</a>
-          </p>
-          <p>
-            <strong>Thời gian:</strong><br>
-            08:00 - 17:00, Thứ 2 - Chủ nhật
-          </p>
-        </aside>
+        </section>
 
       </div>
-    </section>
-
-    <!-- Khu vực: Tóm tắt giỏ hàng & Form đặt hàng -->
-    <section class="section order-section" aria-labelledby="order-title">
-      <div class="container order-layout">
-        
-        <!-- Cột trái: Tóm tắt giỏ hàng (JavaScript sẽ render vào đây) -->
-        <div>
-          <h2 id="order-title">Form đặt hàng</h2>
-          <p>Giỏ hàng phải có ít nhất một sản phẩm trước khi gửi đơn.</p>
-          <div id="cart-summary" class="cart-summary"></div>
-        </div>
-
-        <!-- Cột phải: Form nhập thông tin nhận hàng -->
-        <form id="order-form" class="order-form" novalidate>
-          <div class="form-group">
-            <label for="customer-name">Họ tên khách hàng *</label>
-            <input type="text" id="customer-name" name="customer-name" required>
-            <small>Tối thiểu 3 ký tự.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Số điện thoại *</label>
-            <input type="tel" id="phone" name="phone" inputmode="numeric" required>
-            <small>Gồm đúng 10 chữ số.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="address">Địa chỉ nhận hàng *</label>
-            <input type="text" id="address" name="address" required>
-            <small>Tối thiểu 10 ký tự.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="note">Ghi chú đơn hàng</label>
-            <textarea id="note" name="note" rows="4"></textarea>
-          </div>
-
-          <button class="btn" type="submit">Gửi đơn hàng</button>
-          <p id="order-message" class="form-message" aria-live="polite"></p>
-        </form>
-
-      </div>
-    </section>
+    </div>
   </main>
 
-  <!-- ========================================================================
-       4. CHÂN TRANG (FOOTER)
-       ======================================================================== -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <h2>Đặc Sản Tây Nguyên</h2>
         <p>Tinh hoa núi rừng trong từng sản phẩm.</p>
       </div>
-
       <div>
         <h3>Liên hệ</h3>
         <p>Buôn Ma Thuột, Đắk Lắk</p>
@@ -193,12 +132,9 @@
         <p><a href="mailto:dacsantaynguyen@gmail.com">dacsantaynguyen@gmail.com</a></p>
       </div>
     </div>
-    <p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên.</p>
+    <p class="copyright">&copy; 2026 Đặc Sản Tây Nguyên. Bảo lưu mọi quyền.</p>
   </footer>
 
-  <!-- ========================================================================
-       5. SCRIPTS
-       ======================================================================== -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
